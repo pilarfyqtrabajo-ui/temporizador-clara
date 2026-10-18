@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El último enigma | Clara Immerwahr</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.pagina-reflexion {max-width:960px;text-align:left}
+.cabecera-reflexion {text-align:center;margin-bottom:30px}
+.bloque {
+ background:#1b303b;
+ border:1px solid #85734e;
+ border-radius:12px;
+ padding:clamp(18px,3vw,30px);
+ margin:22px 0;
+}
+.bloque h2 {color:#e6c986;font-family:Georgia,serif}
+audio {width:100%;margin:18px 0}
+.transcripcion {
+ max-height:340px;
+ overflow-y:auto;
+ background:#10212b;
+ padding:22px;
+ border-radius:9px;
+ line-height:1.8;
+}
+.transcripcion p {margin:0 0 16px}
+.campo {margin:22px 0}
+.campo label {text-align:left}
+.campo input,.campo textarea {
+ width:100%;
+ background:#0c1922;
+ border:1px solid #b0bec5;
+ color:white;
+ padding:14px;
+ border-radius:8px;
+}
+textarea {min-height:220px;resize:vertical;line-height:1.6}
+.ayuda {color:#d1dbe0;font-size:.95rem;line-height:1.6}
+.aviso {
+ border-left:3px solid #e6c986;
+ padding:12px 18px;
+ background:#243743;
+ line-height:1.6;
+}
+.boton-inactivo {opacity:.65;cursor:not-allowed}
+</style>
+
+<style id="mejora-lectura">
+/* Diseño amplio para la reflexión educativa */
+body {
+  display:block;
+  padding:24px;
+  font-size:20px;
+  line-height:1.65;
+}
+
+main.pagina-reflexion {
+  width:100%;
+  max-width:1500px;
+  margin:0 auto;
+  padding:clamp(24px,3vw,55px);
+  text-align:left;
+}
+
+.cabecera-reflexion {
+  margin-bottom:38px;
+}
+
+.cabecera-reflexion h1 {
+  font-size:clamp(2.5rem,4vw,4rem);
+}
+
+.cabecera-reflexion > p:last-child {
+  font-size:1.5rem;
+}
+
+.bloque {
+  padding:clamp(24px,3vw,48px);
+  margin:30px 0;
+}
+
+.bloque h2 {
+  font-size:clamp(1.7rem,2.5vw,2.4rem);
+  line-height:1.3;
+}
+
+.bloque p,
+.bloque label,
+.bloque summary {
+  font-size:1.15rem;
+}
+
+.ayuda {
+  font-size:1.1rem;
+  line-height:1.7;
+}
+
+audio {
+  width:100%;
+  margin:25px 0;
+}
+
+details summary {
+  cursor:pointer;
+  padding:18px;
+  border:1px solid #85734e;
+  border-radius:9px;
+  background:#263c48;
+  font-weight:650;
+}
+
+.transcripcion {
+  max-height:65vh;
+  overflow-y:auto;
+  margin-top:18px;
+  padding:clamp(22px,3vw,45px);
+  font-size:1.2rem;
+  line-height:1.9;
+}
+
+.transcripcion p {
+  font-size:inherit;
+  margin-bottom:1.3em;
+}
+
+.campo input,
+.campo textarea {
+  font-size:1.15rem;
+  padding:18px;
+}
+
+.campo textarea {
+  min-height:320px;
+}
+
+.campo label {
+  font-size:1.15rem;
+}
+
+#formulario-reflexion button {
+  font-size:1.1rem;
+  padding:18px 26px;
+}
+
+@media (max-width:700px) {
+  body {
+    padding:8px;
+    font-size:17px;
+  }
+
+  main.pagina-reflexion {
+    padding:18px;
+  }
+
+  .bloque {
+    padding:18px;
+  }
+
+  .transcripcion {
+    max-height:none;
+    font-size:1.05rem;
+    padding:18px;
+  }
+
+  .cabecera-reflexion h1 {
+    font-size:2.2rem;
+  }
+}
+</style>
+
+</head>
+<body>
+<main class="pagina-reflexion">
+<header class="cabecera-reflexion">
+<p class="expediente">EXPEDIENTE · REFLEXIÓN FINAL</p>
+<h1>El último enigma</h1>
+<p>¿Para qué sirve la ciencia?</p>
+</header>
+
+<section class="bloque" aria-labelledby="titulo-audio">
+<h2 id="titulo-audio">Un mensaje de la coautora</h2>
+<p><strong>María del Pilar Ruiz Lucena</strong></p>
+<p class="ayuda">Escuchad el mensaje antes de elaborar vuestra reflexión colectiva.</p>
+
+<audio controls preload="metadata">
+<source src="audio/mensaje-coautora.mp3" type="audio/mpeg">
+Tu navegador no permite reproducir este audio.
+</audio>
+
+<details>
+<summary>Leer la transcripción del mensaje</summary>
+<div class="transcripcion">
+<p>Habéis llegado al final de esta investigación. Habéis seguido las pistas, resuelto los enigmas y descubierto el código: NO A LA GUERRA.</p>
+<p>Pero antes de cerrar este expediente, me gustaría que volvierais a pensar en algunas de las personas que habéis conocido.</p>
+<p>Fritz Haber consiguió sintetizar amoníaco a partir del nitrógeno del aire y del hidrógeno. Su trabajo contribuyó al desarrollo de fertilizantes que transformaron la agricultura y permitieron aumentar la producción de alimentos. Aquel avance llegó a conocerse como el pan del aire.</p>
+<p>Sin embargo, el mismo científico que contribuyó a alimentar a millones de personas también impulsó el desarrollo de armas químicas y supervisó el uso de cloro como arma durante la Primera Guerra Mundial.</p>
+<p>Pensadlo un momento. Una misma persona, unos conocimientos científicos extraordinarios y consecuencias tan diferentes.</p>
+<p>Y frente a esa historia encontramos la de Clara Immerwahr, una mujer con formación científica que vivió en una sociedad donde las oportunidades de las mujeres eran muy distintas de las de los hombres.</p>
+<p>Su historia nos invita a preguntarnos qué ocurre cuando nuestras convicciones entran en conflicto con las decisiones de quienes nos rodean.</p>
+<p>También habéis conocido a Hertha Ayrton. Mientras se utilizaban gases tóxicos en las trincheras, ella aplicó sus investigaciones sobre el movimiento de los fluidos para desarrollar un dispositivo capaz de dispersarlos.</p>
+<p>Y a pesar de sus aportaciones, tuvo que enfrentarse a resistencias para que su invento fuera aceptado.</p>
+<p>Tres historias que nos obligan a mirar la ciencia desde perspectivas diferentes.</p>
+<p>Porque no basta con preguntarnos qué somos capaces de descubrir. También debemos preguntarnos qué hacemos con ese conocimiento, quién decide sus aplicaciones y quién asume sus consecuencias.</p>
+<p>Y hay otra cuestión que no podemos ignorar. ¿Cuántas mujeres tuvieron que luchar para investigar, para ser escuchadas o para que se reconocieran sus descubrimientos?</p>
+<p>¿Cuántas aportaciones hemos perdido porque durante siglos el acceso a la ciencia no fue igual para todas las personas?</p>
+<p>La igualdad en la ciencia no consiste únicamente en recordar nombres que fueron olvidados. Significa garantizar que todas las personas tengan oportunidades reales de investigar, aportar sus ideas y participar en las decisiones que afectan a nuestra sociedad.</p>
+<p>Hoy seguimos enfrentándonos a dilemas semejantes. La inteligencia artificial, la ingeniería genética o las nuevas tecnologías pueden ayudarnos a resolver problemas, pero también pueden utilizarse para perjudicar, discriminar o aumentar las desigualdades.</p>
+<p>Por eso quiero proponeros un último desafío.</p>
+<p>Elegid un avance científico actual. Pensad qué beneficios puede aportar, qué riesgos plantea y quién debería decidir cómo utilizarlo.</p>
+<p>Reflexionad también sobre la importancia de que mujeres y hombres puedan participar en igualdad de condiciones en la investigación y en esas decisiones.</p>
+<p>No busquéis una respuesta perfecta. Hablad, discutid, escuchad opiniones diferentes y defended vuestras ideas con argumentos.</p>
+<p>Habéis conseguido resolver el misterio de Clara Immerwahr.</p>
+<p>Ahora os corresponde afrontar una pregunta mucho más difícil: ¿qué clase de ciencia queremos y al servicio de quién debería estar?</p>
+</div>
+</details>
+</section>
+
+<section class="bloque" aria-labelledby="titulo-reflexion">
+<h2 id="titulo-reflexion">Vuestra reflexión colectiva</h2>
+<p class="ayuda">
+Elegid un avance científico actual. Analizad sus beneficios,
+sus riesgos y quién debería decidir cómo utilizarlo.
+Relacionad vuestra reflexión con la igualdad de oportunidades
+y la responsabilidad ética en la ciencia.
+</p>
+
+<form id="formulario-reflexion">
+<div class="campo">
+<label for="centro">Nombre del instituto *</label>
+<input id="centro" name="centro" maxlength="150"
+placeholder="Nombre completo del centro" required>
+</div>
+
+<div class="campo">
+<label for="localidad">Localidad *</label>
+<input id="localidad" name="localidad" maxlength="120"
+placeholder="Municipio donde se encuentra el centro" required>
+</div>
+
+<div class="campo">
+<label for="reflexion">Reflexión colectiva *</label>
+<textarea id="reflexion" name="reflexion"
+minlength="10" maxlength="5000" required
+placeholder="Escribid vuestra reflexión argumentada..."></textarea>
+</div>
+
+<p class="aviso">
+No escribáis nombres, apellidos ni otros datos personales
+del alumnado. Las respuestas se recogerán con finalidad educativa.
+</p>
+
+<button class="principal" id="enviar-reflexion" type="submit">
+Enviar reflexión
+</button>
+<p class="ayuda" id="estado-envio" role="status" aria-live="polite">
+La reflexión se enviará a la hoja de recogida del proyecto.
+</p>
+</form>
+</section>
+
+<footer style="text-align:center">
+El misterioso caso de Clara Immerwahr · Reflexión final
+</footer>
+</main>
+
+<iframe name="destino_reflexiones" id="destino_reflexiones"
+title="Recepción de reflexiones" hidden></iframe>
+
+<form id="transporte-reflexiones"
+method="POST"
+target="destino_reflexiones"
+action="https://script.google.com/macros/s/AKfycbxCNi3dKLJ-TgUc2JBjqk851yEAEvfMDeh6vs0Cv1imaGybMT4gj2yUiN1aDJ6bpHgS/exec"
+hidden>
+<input type="hidden" name="payload" id="payload-reflexiones">
+</form>
+
+<script id="conexion-reflexiones">
+(function () {
+  "use strict";
+
+  const formulario = document.getElementById("formulario-reflexion");
+  const transporte = document.getElementById("transporte-reflexiones");
+  const payload = document.getElementById("payload-reflexiones");
+  const estado = document.getElementById("estado-envio");
+  const boton = document.getElementById("enviar-reflexion");
+
+  const clave = "clara_reflexion_pendiente_v1";
+  let enviando = false;
+
+  function crearId() {
+    if (window.crypto && window.crypto.randomUUID) {
+      return window.crypto.randomUUID();
+    }
+    if (window.crypto && window.crypto.getRandomValues) {
+      const bytes = new Uint8Array(16);
+      window.crypto.getRandomValues(bytes);
+      return Array.from(bytes, b =>
+        b.toString(16).padStart(2, "0")
+      ).join("");
+    }
+    throw new Error("No se puede generar un identificador seguro.");
+  }
+
+  formulario.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    if (enviando || !formulario.reportValidity()) return;
+
+    const datos = {
+      centro: document.getElementById("centro").value.trim(),
+      localidad: document.getElementById("localidad").value.trim(),
+      reflexion: document.getElementById("reflexion").value.trim()
+    };
+
+    if (!datos.centro || !datos.localidad ||
+        datos.reflexion.length < 10) {
+      estado.textContent = "Revisad los campos antes de enviar.";
+      return;
+    }
+
+    try {
+      const contenido = JSON.stringify(datos);
+      const anterior = JSON.parse(localStorage.getItem(clave) || "null");
+
+      if (anterior && anterior.contenido === contenido) {
+        datos.id = anterior.id;
+      } else {
+        datos.id = crearId();
+      }
+
+      localStorage.setItem(clave, JSON.stringify({
+        id: datos.id,
+        contenido: contenido
+      }));
+
+      payload.value = JSON.stringify(datos);
+
+      enviando = true;
+      boton.disabled = true;
+
+      transporte.submit();
+
+      estado.textContent =
+        "Solicitud enviada. La recepción todavía no está confirmada. " +
+        "Conservad el texto hasta verificar que aparece en Google Sheets.";
+
+    } catch (error) {
+      enviando = false;
+      boton.disabled = false;
+      estado.textContent =
+        "No se pudo preparar el envío. La reflexión sigue en pantalla.";
+      console.error(error);
+    }
+  });
+})();
+</script>
+
+
+<style>
+#cierre-expediente {
+  display: none;
+  max-width: 760px;
+  margin: 35px auto;
+  padding: 38px 28px;
+  background: #171c1b;
+  color: #f5eddb;
+  border: 2px solid #bba16b;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 12px 36px rgba(0,0,0,.3);
+  font-family: Georgia, serif;
+}
+#cierre-expediente h2 {
+  color: #e8c98a;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  letter-spacing: .08em;
+}
+#cierre-expediente p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+#cierre-expediente .pregunta-final {
+  font-size: 1.45rem;
+  color: #e8c98a;
+  font-weight: bold;
+  margin: 28px 0;
+}
+</style>
+
+<section id="cierre-expediente" role="status" aria-live="polite">
+  <h2>EXPEDIENTE CERRADO</h2>
+  <p>Habéis resuelto el misterio de Clara Immerwahr.</p>
+  <p>Vuestra reflexión colectiva ha sido enviada para su registro.</p>
+  <p>La investigación termina aquí, pero la pregunta permanece:</p>
+  <p class="pregunta-final">
+    ¿Todo lo que la ciencia permite hacer debería hacerse?
+  </p>
+  <p>Gracias por participar en esta experiencia.</p>
+</section>
+
+<script>
+(function () {
+  const formulario = document.getElementById('formulario-reflexion');
+  const cierre = document.getElementById('cierre-expediente');
+
+  if (!formulario || !cierre) return;
+
+  formulario.addEventListener('submit', function () {
+    if (!formulario.checkValidity()) return;
+
+    window.setTimeout(function () {
+      if (!document.getElementById('enviar-reflexion')?.disabled) return;
+
+      formulario.style.display = 'none';
+      cierre.style.display = 'block';
+      cierre.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 900);
+  });
+})();
+</script>
+
+</body>
+</html>

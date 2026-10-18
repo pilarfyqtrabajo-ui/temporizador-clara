@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Temporizador | Clara Immerwahr</title>
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+
+<style>
+.enlace-enigma {
+ display:inline-block;
+ padding:17px 25px;
+ margin:12px 0;
+ background:#e0bf75;
+ color:#17232b;
+ border-radius:9px;
+ font-weight:700;
+ font-size:1.15rem;
+ text-decoration:none;
+}
+.enlace-enigma:hover {background:#f1d696}
+.enlace-enigma:focus-visible {
+ outline:3px solid white;
+ outline-offset:4px;
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="expediente">EXPEDIENTE · INVESTIGACIÓN CIENTÍFICA</p>
+<h1>El misterioso caso de <em>Clara Immerwahr</em></h1>
+<p>Temporizador de la investigación</p>
+</header>
+
+<section class="reloj-panel" aria-label="Tiempo restante">
+<p id="estado">PREPARADO PARA COMENZAR</p>
+<div id="reloj" role="timer" aria-label="70 minutos restantes">70:00</div>
+<p id="penalizaciones">Penalizaciones: 0</p>
+</section>
+
+<section id="partida">
+<div class="controles">
+<button id="iniciar" class="principal">Iniciar investigación</button>
+<button id="pausar" disabled>Pausar</button>
+<button id="reiniciar">Reiniciar</button>
+<button id="pantalla">Pantalla completa</button>
+</div>
+<form id="formulario">
+<label for="codigo">Código final de la investigación</label>
+<div class="entrada">
+<input id="codigo" type="text" maxlength="100" disabled
+placeholder="Introduce el código" autocomplete="off" required>
+<button id="comprobar" class="principal" disabled>Comprobar código</button>
+</div>
+<p>Cada código incorrecto resta 5 minutos.</p>
+</form>
+</section>
+
+<section id="resultado" hidden tabindex="-1">
+<h2 id="tituloResultado"></h2>
+<p id="textoResultado"></p>
+<p><a id="ultimo-enigma" href="reflexion.html" class="enlace-enigma">Descubrir el último enigma →</a></p><button id="nuevo">Reiniciar partida</button>
+</section>
+
+<p id="mensaje" role="status" aria-live="polite"></p>
+<footer>Una investigación sobre ciencia, ética y responsabilidad</footer>
+</main>
+</body>
+</html>
